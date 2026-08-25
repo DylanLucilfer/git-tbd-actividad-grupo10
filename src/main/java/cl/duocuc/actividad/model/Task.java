@@ -37,5 +37,7 @@ public class Task {
 
     public void setCompletada(boolean completada) {
         this.completada = completada;
+ 
+ //benjamin jerez estuvo por aqui 
     }
 }
