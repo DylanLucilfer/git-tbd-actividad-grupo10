@@ -27,4 +27,13 @@ public class TaskService {
         tasks.add(nueva);
         return nueva;
     }
+
+    public Task buscarPorId(Long id) {
+        for (Task task : tasks) {
+            if (task.getId().equals(id)) {
+                return task;
+            }
+        }
+        return null;
+    }
 }

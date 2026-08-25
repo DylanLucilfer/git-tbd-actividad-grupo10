@@ -25,4 +25,10 @@ public class TaskController {
     public Task crear(@RequestBody Task task) {
         return taskService.crear(task);
     }
+
+    // Buscar una tarea por ID
+    @GetMapping("/{id}")
+    public Task buscarPorId(@PathVariable Long id) {
+        return taskService.buscarPorId(id);
+    }
 }
